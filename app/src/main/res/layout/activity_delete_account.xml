@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.raivogaming.vegescanner.DeleteAccountActivity">
+
+    <include layout="@layout/app_bar_layout" android:id="@+id/deleteaccount_page_tool_bar"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"></include>
+
+    <TextView
+        android:id="@+id/delete_otsikko_teksi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Harmi että lähdet. Toivottavasti näemme pian uudelleen!"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deleteaccount_page_tool_bar"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/delete_info_teksti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="Tarkistamme vielä että olet varmasti kyseisen tilin omistaja. Anna salasanasi niin poistamme tilisi. Tilin poistamista ei voi peruuttaa joten tulevaisuudessa jos tulet takaisin tarvitset uuden käyttäjätilin. Muistathan myös että jos sinulla on PREMIUM jäsenyys niin emme hyvitä käyttämättä jäänyttä aikaa eikä aikaa voi siirtää toiselle käyttäjälle. Jos sinulla on aktiivinen PREMIUM tilaus niin tilaus peruuntuu eikä kortiltasi veloiteta enempää maksuja."
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/delete_otsikko_teksi"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/delete_info_teksti"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/delete_account_password_field"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <EditText
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Salasana" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/delete_delete_account_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#FF0000"
+        android:onClick="deleteAccount"
+        android:paddingEnd="30dp"
+        android:paddingStart="30dp"
+        android:text="Poista tili"
+        android:textColor="#FFF"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/delete_account_password_field" />
+
+    <ProgressBar
+        android:id="@+id/deletingProgressbar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/delete_poistetaan_teksti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Poistetaan... Odota hetki"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/deletingProgressbar"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

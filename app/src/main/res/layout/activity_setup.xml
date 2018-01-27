@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/green_background"
+    tools:context="com.raivogaming.vegescanner.SetupActivity">
+
+    <TextView
+        android:id="@+id/selectYourProfileImageText"
+        android:layout_width="match_parent"
+        android:textSize="25sp"
+        android:textColor="#FFF"
+        android:paddingTop="90dp"
+        android:paddingBottom="30dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="VALITSE PROFIILIKUVASI"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/userimage"
+        android:id="@+id/circleImageView"
+        android:layout_below="@+id/selectYourProfileImageText"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_marginStart="100dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:id="@+id/setupSelectImageButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VALITSE KUVA"
+        android:textSize="20sp"
+        android:textColor="#FFF"
+        android:background="@drawable/transparent_button_withborder"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="80dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/circleImageView"
+        android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:drawableEnd="@drawable/ic_continue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/setupSelectImageButton"
+            android:text="OHITA"
+            android:textSize="20dp"
+            android:textColor="@android:color/white"/>
+
+
+</RelativeLayout>

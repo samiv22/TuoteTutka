@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/green_background"
+    tools:context="com.raivogaming.vegescanner.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/loginFieldsLayout">
+
+        <TextView
+            android:id="@+id/loginLoginText"
+            android:layout_marginTop="140dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="KIRJAUDU SISÄÄN"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"/>
+
+        <EditText
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:id="@+id/loginEmailField"
+            android:background="@drawable/edittext_rounded_corners_top"
+            android:padding="12dp"
+            android:layout_below="@id/loginLoginText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Sähköpostiosoite"
+            android:textColorHint="#666666"
+            android:inputType="textEmailAddress" />
+
+        <View
+            android:id="@+id/loginPageDivider"
+            android:layout_below="@id/loginEmailField"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="#000"/>
+
+        <EditText
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/ic_lock"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:id="@+id/loginPasswordField"
+            android:layout_below="@id/loginPageDivider"
+            android:background="@drawable/edittext_rounded_corners_bottom"
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Salasana"
+            android:textColorHint="#666666"
+            android:inputType="textPassword" />
+
+
+        <Button
+            android:id="@+id/loginLoginButton"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/loginPasswordField"
+            android:layout_alignEnd="@id/loginPasswordField"
+            android:layout_height="wrap_content"
+            android:text="Kirjaudu sisään"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textColor="#FFF"
+            android:background="@drawable/transparent_button_withborder"/>
+
+        <com.facebook.login.widget.LoginButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/loginLoginButton"
+            android:layout_marginTop="25dp"
+            android:id="@+id/facebookLoginButton"/>
+
+        <LinearLayout
+            android:id="@+id/loginpage_toregisterpagetext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_below="@id/facebookLoginButton"
+            android:layout_marginTop="40dp"
+            android:onClick="toRegisterPage">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFF"
+                android:textSize="15sp"
+                android:text="Eikö vielä tiliä? "/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:text="Rekisteröidy"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/loginProgressBarLayout">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/loginProgressBar"
+            android:backgroundTint="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/loggingInText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loginProgressBar"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:text="Kirjaudutaan \nodota hetki..." />
+
+    </LinearLayout>
+
+</RelativeLayout>

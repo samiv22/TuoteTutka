@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">VegeScanner</string>
+    <string name="I_already_have_an_account">Minulla on jo tili</string>
+    <string name="I_need_new_account">Tarvitsen uuden tilin</string>
+    <string name="startWelcomeText">Mukava nähdä!</string>
+    <string name="vegescanner">VegeScanner</string>
+    <string name="username">Käyttäjänimi</string>
+    <string name="emailaddress">Sähköpostiosoite</string>
+    <string name="salasana">Salasana</string>
+    <string name="facebook_app_id">339770469800997</string>
+    <string name="fb_login_protocol_scheme">fb339770469800997</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

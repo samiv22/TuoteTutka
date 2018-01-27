@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#20273A</color>
+    <color name="colorPrimaryDark">#BCDB66</color>
+    <color name="colorAccent">#FF5722</color>
+    <color name="blackStatusBar">#20273A</color>
+    <color name="buttonTextOrange">#FF5800</color>
+</resources>

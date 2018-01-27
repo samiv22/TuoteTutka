@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1066254233711",
+    "firebase_url": "https://vegescanner-4c8d6.firebaseio.com",
+    "project_id": "vegescanner-4c8d6",
+    "storage_bucket": "vegescanner-4c8d6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1066254233711:android:ca43c2a72e9d249e",
+        "android_client_info": {
+          "package_name": "com.raivogaming.vegescanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1066254233711-p9eu31nh0j5lde9unfvaivum5mifvut5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.raivogaming.vegescanner",
+            "certificate_hash": "998d27aae211f06fba2391972911d3c53e51fd99"
+          }
+        },
+        {
+          "client_id": "1066254233711-bmqshh85laei216r3cugjeed0p2sm2pg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCM9yNK2G9eWH30QLGRtAClDO6vtdRRA5s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1066254233711-bmqshh85laei216r3cugjeed0p2sm2pg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/green_background"
+    tools:context="com.raivogaming.vegescanner.ArvosteluActivity">
+
+    <TextView
+        android:layout_marginTop="61dp"
+        android:id="@+id/arvostelu_otsikko"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jätä arvostelu tuotteesta: "
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/arvostelu_arvosteluteksti" />
+
+    <EditText
+        android:layout_margin="40dp"
+        android:id="@+id/arvostelu_arvosteluteksti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/arvostelu_otsikko"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="91dp"
+        android:ems="10"
+        android:textColor="#FFF"
+        android:backgroundTint="#FFF"
+        android:textColorHint="#FFF"
+        android:inputType="textPersonName"
+        android:hint="Kerro tuotteesta:"/>
+
+    <RatingBar
+        android:id="@+id/arvostelu_ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:layout_alignStart="@+id/arvostelu_arvosteluteksti"
+        android:layout_below="@+id/arvostelu_arvosteluteksti"
+        android:text="Montako tähteä antaisit tuotteelle?" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textColor="#FFF"
+        android:text="Suosittelisitko tuotetta muille?"
+        android:layout_below="@+id/arvostelu_ratingbar"
+        android:layout_alignStart="@+id/arvostelu_ratingbar" />
+
+    <CheckBox
+        android:id="@+id/arvostelu_checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kyllä"
+        android:textColor="#FFF"
+        android:layout_below="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+    <Button
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:onClick="lahetaArvostelu"
+        android:id="@+id/button2"
+        android:textColor="#FFF"
+        android:background="@drawable/transparent_button_withborder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/arvostelu_arvosteluteksti"
+        android:layout_below="@+id/arvostelu_checkBox"
+        android:text="Lähetä arvostelu"/>
+
+    <ImageButton
+        android:onClick="goBack"
+        android:padding="15dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/ic_back_button" />
+
+
+</RelativeLayout>

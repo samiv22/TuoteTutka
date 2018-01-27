@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.raivogaming.vegescanner.SettingsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/green_background">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/settings_relative_layout_top"
+                android:layout_width="match_parent"
+                android:layout_height="220dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    app:civ_border_width="4dp"
+                    app:civ_border_color="#FFF"
+                    android:layout_width="match_parent"
+                    android:id="@+id/settingsUserImage"
+                    android:layout_marginTop="15dp"
+                    android:padding="10dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/userimage"/>
+
+                <TextView
+                    android:id="@+id/settingsUsernameText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Käyttäjänimi"
+                    android:layout_below="@id/settingsUserImage"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:textColor="#FFF"
+                    android:padding="10dp"/>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/settingsChangeImageButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="#FFF"
+                android:text="Vaihda profiilikuva"
+                android:layout_below="@id/settings_relative_layout_top"/>
+
+            <Button
+                android:id="@+id/settingsKirjauduUlosButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorAccent"
+                android:textColor="#FFF"
+                android:text="Kirjaudu Ulos"
+                android:layout_below="@id/settingsChangeImageButton"/>
+
+            <Button
+                android:id="@+id/settingsDeleteAccountButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FF0000"
+                android:textColor="#FFF"
+                android:text="Poista tili"
+                android:layout_below="@id/settingsKirjauduUlosButton"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
