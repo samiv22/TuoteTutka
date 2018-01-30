@@ -3,3 +3,5 @@
 Android application which helps people to find Vegan products. User can scan the barcode of the product or search it and the app will tell if it is vegan.
 
 Authentication, database and storage uses Firebase.
+
+Check video on Youtube https://youtu.be/Ylh2gevAvqA
